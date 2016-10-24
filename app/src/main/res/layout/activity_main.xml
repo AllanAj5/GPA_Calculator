@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.allanralph.sgpacalculator.MainActivity">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ds"
+        android:layout_above="@+id/db"
+        android:layout_alignParentStart="true"
+        android:hint="Data Structures"
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/db"
+        android:layout_above="@+id/os"
+        android:layout_alignParentStart="true"
+        android:hint="DBMS                  "
+        android:inputType="number"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/os"
+        android:layout_above="@+id/sw"
+        android:inputType="number"
+        android:layout_alignParentStart="true"
+        android:hint="Operating System" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sw"
+        android:layout_centerVertical="true"
+        android:inputType="number"
+        android:layout_alignParentStart="true"
+        android:hint="Software Engg.    " />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/cp"
+        android:layout_below="@+id/sw"
+        android:inputType="number"
+        android:layout_alignParentStart="true"
+        android:hint="Cryptography        " />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter your marks"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:inputType="number"
+        android:layout_centerHorizontal="true"
+        android:textSize="30dp" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Get Sgpa"
+        android:id="@+id/but"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ds1"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/ds"
+        android:layout_toStartOf="@+id/reset" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ds2"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/db"
+        android:layout_toStartOf="@+id/reset" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ds3"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/os"
+        android:layout_toStartOf="@+id/reset" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ds4"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/sw"
+        android:layout_toStartOf="@+id/reset" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ds5"
+        android:textSize="25dp"
+        android:layout_alignTop="@+id/cp"
+        android:layout_toStartOf="@+id/reset" />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/result"
+        android:textSize="25dp"
+
+        android:textColor="#0ad63d"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fail"
+        android:textSize="25dp"
+        android:textColor="#df2706"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Reset"
+        android:id="@+id/reset"
+        android:layout_alignParentBottom="true"
+        android:layout_alignEnd="@+id/result" />
+
+</RelativeLayout>
+
